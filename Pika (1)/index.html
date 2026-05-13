@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PIKA — Workspace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&amp;family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <button type="button" class="menu-toggle" onclick="toggleSidebar()">☰</button>
+    <div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">P</div>
+      <div class="brand-name">PIKA</div>
+      <div class="brand-tld">.io</div>
+    </div>
+    <nav class="nav">
+      <div class="nav-section">
+        <div class="nav-label">Biznesi</div>
+        <a class="nav-item" data-panel="crm">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 00-3-3.87"></path><path d="M16 3.13a4 4 0 010 7.75"></path></svg>
+          CRM
+          <span class="nav-count">47</span>
+        </a>
+        <a class="nav-item" data-panel="sales">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Sales
+          <span class="nav-count">12</span>
+        </a>
+        <a class="nav-item" data-panel="subscriptions">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M23 4v6h-6"></path><path d="M1 20v-6h6"></path><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"></path></svg>
+          Subscriptions
+          <span class="nav-count">28</span>
+        </a>
+        <a class="nav-item active" data-panel="invoicing">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          Invoicing
+          <span class="nav-count">94</span>
+        </a>
+        <a class="nav-item" data-panel="expenses">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path></svg>
+          Expenses &amp; Docs
+        </a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-label">Tregu</div>
+        <a class="nav-item">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"></path></svg>
+          Website
+        </a>
+        <a class="nav-item">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"></path></svg>
+          eCommerce
+        </a>
+        <a class="nav-item">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Email Marketing
+        </a>
+        <a class="nav-item">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg>
+          Live Chat
+        </a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-label">Cilësime</div>
+        <a class="nav-item">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"></path></svg>
+          Cilësimet
+        </a>
+      </div>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="avatar">AR</div>
+      <div style="min-width:0;flex:1">
+        <div class="user-name">Ardian R.</div>
+        <div class="user-org">Studio PIKA · Pristina</div>
+      </div>
+    </div>
+  </aside>
+  
+  <main class="main">
+
+    <!-- Top bar -->
+    <div class="topbar">
+       
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input placeholder="Kërko klientë, fatura, kuotime…">
+        <kbd>⌘ K</kbd>
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-btn" title="Krijo i ri">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <button class="icon-btn" title="Njoftime">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 01-3.46 0"></path></svg>
+          <span class="dot"></span>
+        </button>
+        <button class="icon-btn" title="Ndihmë">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        </button>
+        <div class="divider-v"></div>
+        <button class="icon-btn">
+          <div class="avatar" style="width:28px;height:28px;font-size:11px">AR</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- ═══════════════ PANELS ═══════════════ -->
+    <!-- Panels are injected from below for readability -->
+    <!-- ═══════════════ CRM PANEL ═══════════════ -->
+<section class="panel" data-id="crm">
+  <div class="page">
+    <div class="page-head">
+      <div>
+        <div class="breadcrumb">
+          <span>Biznesi</span>
+          <span class="sep">/</span>
+          <span>CRM</span>
+        </div>
+        <h1 class="page-title">Pipeline e <em>shitjeve</em></h1>
+        <p class="page-sub">Ndiq lead-et nga kontakti i parë deri tek mbyllja. Tërhiq kartat midis kolonave për të lëvizur fazën.</p>
+      </div>
+      <div class="head-actions">
+        <button class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Eksporto
+        </button>
+        <button class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          Lead i ri
+        </button>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-label">Pipeline gjithsej</div>
+        <div class="stat-value">€142.8<span class="unit">K</span></div>
+        <div class="stat-delta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>+18.4% këtë muaj</div>
+        <svg class="stat-spark" viewBox="0 0 100 38"><polyline points="0,30 10,28 20,24 30,26 40,20 50,18 60,15 70,12 80,14 90,8 100,5" fill="none" stroke="var(--pika)" stroke-width="1.5"></polyline></svg>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Lead-e aktive</div>
+        <div class="stat-value">47</div>
+        <div class="stat-delta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>+8 javën e fundit</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Norma e mbylljes</div>
+        <div class="stat-value">32<span class="unit">%</span></div>
+        <div class="stat-delta down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>−2.1% nga muaji i kaluar</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Të mbyllura (Maj)</div>
+        <div class="stat-value">€38.2<span class="unit">K</span></div>
+        <div class="stat-delta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>11 marrëveshje të fituara</div>
+      </div>
+    </div>
+
+    <!-- Tabs + filters -->
+    <div class="tabs">
+      <button class="tab active">Pipeline <span class="count">47</span></button>
+      <button class="tab">Lead-et <span class="count">132</span></button>
+      <button class="tab">Klientët <span class="count">86</span></button>
+      <button class="tab">Aktivitetet</button>
+      <button class="tab">Raportet</button>
+    </div>
+
+    <div class="toolbar">
+      <button class="chip active" data-toggle="">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        Të gjitha
+      </button>
+      <button class="chip" data-toggle="">Të miat (12)</button>
+      <button class="chip" data-toggle="">Hot 🔥 (5)</button>
+      <button class="chip" data-toggle="">Burimi: Website</button>
+      <button class="chip" data-toggle="">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="7" y1="12" x2="17" y2="12"></line><line x1="10" y1="18" x2="14" y2="18"></line></svg>
+        Më shumë filtra
+      </button>
+      <div style="margin-left:auto;display:flex;gap:6px">
+        <button class="icon-btn" title="Pamja Kanban" style="background:#1A1812;color:#FFFEFA">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color:inherit"><rect x="3" y="3" width="6" height="18" rx="1"></rect><rect x="10" y="3" width="6" height="12" rx="1"></rect><rect x="17" y="3" width="4" height="8" rx="1"></rect></svg>
+        </button>
+        <button class="icon-btn" title="Pamja listë">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Kanban -->
+    <div class="kanban">
+
+      <!-- New Lead -->
+      <div class="k-col">
+        <div class="k-col-head">
+          <span class="k-col-stripe stripe-new"></span>
+          <span class="k-col-name">Lead i ri</span>
+          <span class="k-col-count">9</span>
+          <span class="k-col-sum">€18.2K</span>
+        </div>
+        <div class="k-col-body">
+          <div class="k-card">
+            <div class="k-card-co">Albi Mall sh.p.k</div>
+            <div class="k-card-meta">CRM + Faturim · Tiranë</div>
+            <div class="k-card-value">€2,400 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag warm">Warm</span></div>
+              <div class="k-card-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 ditë</div>
+            </div>
+          </div>
+          <div class="k-card">
+            <div class="k-card-co">Driton Construction</div>
+            <div class="k-card-meta">Paketa Pro · Prishtinë</div>
+            <div class="k-card-value">€3,200 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag hot">Hot</span><span class="k-tag">Referim</span></div>
+              <div class="k-card-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>1 ditë</div>
+            </div>
+          </div>
+          <div class="k-card">
+            <div class="k-card-co">Vena Cosmetics</div>
+            <div class="k-card-meta">eCommerce + CRM · Shkup</div>
+            <div class="k-card-value">€1,800 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag cold">Cold</span></div>
+              <div class="k-card-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>5 ditë</div>
+            </div>
+          </div>
+          <div class="k-add">+ Shto lead</div>
+        </div>
+      </div>
+
+      <!-- Qualified -->
+      <div class="k-col">
+        <div class="k-col-head">
+          <span class="k-col-stripe stripe-qualified"></span>
+          <span class="k-col-name">I kualifikuar</span>
+          <span class="k-col-count">12</span>
+          <span class="k-col-sum">€34.6K</span>
+        </div>
+        <div class="k-col-body">
+          <div class="k-card">
+            <div class="k-card-co">Bardh Caffe &amp; Co</div>
+            <div class="k-card-meta">POS + Faturim · Prizren</div>
+            <div class="k-card-value">€2,160 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag warm">Warm</span></div>
+              <div class="k-card-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>4 ditë</div>
+            </div>
+          </div>
+          <div class="k-card">
+            <div class="k-card-co">Era Pharmacy</div>
+            <div class="k-card-meta">Inventari + CRM · Tiranë</div>
+            <div class="k-card-value">€4,800 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag hot">Hot</span></div>
+              <div class="k-card-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 ditë</div>
+            </div>
+          </div>
+          <div class="k-card">
+            <div class="k-card-co">Studio Linja</div>
+            <div class="k-card-meta">Website + Marketing · Tiranë</div>
+            <div class="k-card-value">€1,440 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag">Demo</span></div>
+              <div class="k-card-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>3 ditë</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proposal -->
+      <div class="k-col">
+        <div class="k-col-head">
+          <span class="k-col-stripe stripe-proposal"></span>
+          <span class="k-col-name">Propozim</span>
+          <span class="k-col-count">11</span>
+          <span class="k-col-sum">€42.3K</span>
+        </div>
+        <div class="k-col-body">
+          <div class="k-card">
+            <div class="k-card-co">Adriatik Logistics</div>
+            <div class="k-card-meta">Enterprise · Durrës</div>
+            <div class="k-card-value">€8,400 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag hot">Hot</span><span class="k-tag">Q-241</span></div>
+              <div class="k-card-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>1 ditë</div>
+            </div>
+          </div>
+          <div class="k-card">
+            <div class="k-card-co">Toskana Restaurants</div>
+            <div class="k-card-meta">5 lokale · Tiranë</div>
+            <div class="k-card-value">€6,000 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag warm">Warm</span></div>
+              <div class="k-card-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>6 ditë</div>
+            </div>
+          </div>
+          <div class="k-card">
+            <div class="k-card-co">Kosova Print Studio</div>
+            <div class="k-card-meta">CRM + Faturim · Prishtinë</div>
+            <div class="k-card-value">€2,880 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag">PDF dërguar</span></div>
+              <div class="k-card-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>3 ditë</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Negotiation -->
+      <div class="k-col">
+        <div class="k-col-head">
+          <span class="k-col-stripe stripe-negotiate"></span>
+          <span class="k-col-name">Negocim</span>
+          <span class="k-col-count">8</span>
+          <span class="k-col-sum">€31.4K</span>
+        </div>
+        <div class="k-col-body">
+          <div class="k-card">
+            <div class="k-card-co">Hekla Distribution</div>
+            <div class="k-card-meta">B2B portal · Tiranë</div>
+            <div class="k-card-value">€7,200 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag hot">Hot</span></div>
+              <div class="k-card-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>Sot</div>
+            </div>
+          </div>
+          <div class="k-card">
+            <div class="k-card-co">Genti Properties</div>
+            <div class="k-card-meta">CRM Enterprise · Prishtinë</div>
+            <div class="k-card-value">€5,400 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag warm">Warm</span></div>
+              <div class="k-card-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 ditë</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Won -->
+      <div class="k-col">
+        <div class="k-col-head">
+          <span class="k-col-stripe stripe-won"></span>
+          <span class="k-col-name">E fituar</span>
+          <span class="k-col-count">7</span>
+          <span class="k-col-sum">€16.3K</span>
+        </div>
+        <div class="k-col-body">
+          <div class="k-card">
+            <div class="k-card-co">Sahit Auto Service</div>
+            <div class="k-card-meta">Paketa Pro · Ferizaj</div>
+            <div class="k-card-value">€3,600 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag" style="background:#2D6B52;color:#DCEAE0">✓ Mbyllur</span></div>
+              <div class="k-card-time">Sot</div>
+            </div>
+          </div>
+          <div class="k-card">
+            <div class="k-card-co">Lulëzim Bakery</div>
+            <div class="k-card-meta">POS + Faturim · Tiranë</div>
+            <div class="k-card-value">€1,800 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag" style="background:var(--success-tint);color:var(--success)">✓ Mbyllur</span></div>
+              <div class="k-card-time">Dje</div>
+            </div>
+          </div>
+          <div class="k-card">
+            <div class="k-card-co">Mirjeta Boutique</div>
+            <div class="k-card-meta">eCommerce · Shkup</div>
+            <div class="k-card-value">€2,160 <small>/ vit</small></div>
+            <div class="k-card-foot">
+              <div class="k-card-tags"><span class="k-tag" style="background:var(--success-tint);color:var(--success)">✓ Mbyllur</span></div>
+              <div class="k-card-time">3 ditë</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════ SALES PANEL ═══════════════ -->
+<section class="panel" data-id="sales">
+  <div class="page">
+    <div class="page-head">
+      <div>
+        <div class="breadcrumb"><span>Biznesi</span><span class="sep">/</span><span>Sales</span></div>
+        <h1 class="page-title">Kuotime &amp; <em>shitje</em></h1>
+        <p class="page-sub">Krijo kuotime, ndjek pranimet dhe konverto në fatura me një klikim.</p>
+      </div>
+      <div class="head-actions">
+        <button class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="14 2 14 8 20 8"></polyline><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path></svg>
+          Shabllonet
+        </button>
+        <button class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          Kuotim i ri
+        </button>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-label">Kuotime aktive</div>
+        <div class="stat-value">12</div>
+        <div class="stat-delta">€54,840 vlerë</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Të pranuara (30d)</div>
+        <div class="stat-value">9</div>
+        <div class="stat-delta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>75% konvertim</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Mesatare e kuotimit</div>
+        <div class="stat-value">€4.5<span class="unit">K</span></div>
+        <div class="stat-delta">Periudha mesatare: 6.2 ditë</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Të konvertuara në fatura</div>
+        <div class="stat-value">€32.8<span class="unit">K</span></div>
+        <div class="stat-delta">Maj 2026</div>
+      </div>
+    </div>
+
+    <!-- Quote → Invoice flow visualization -->
+    <div class="flow-bar">
+      <div style="font-family:var(--font-display);font-size:14px;font-weight:500;margin-right:8px">Rrjedha:</div>
+      <div class="flow-step done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Kuotim</div>
+      <span class="flow-sep">→</span>
+      <div class="flow-step done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Pranim klienti</div>
+      <span class="flow-sep">→</span>
+      <div class="flow-step active">Faturë</div>
+      <span class="flow-sep">→</span>
+      <div class="flow-step">Pagesë</div>
+      <div style="margin-left:auto;font-size:12px;color:var(--ink-muted)">Konvertimi automatik aktiv pas pranimit</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <div class="card-title">Kuotimet</div>
+          <div class="card-sub">Të gjitha kuotimet aktive dhe historike</div>
+        </div>
+        <div class="head-actions">
+          <button class="chip" data-toggle="">Statusi: Të gjitha</button>
+          <button class="chip" data-toggle="">Periudha: Ky muaj</button>
+        </div>
+      </div>
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th style="width:36px"><div class="checkbox"></div></th>
+              <th>Kuotim</th>
+              <th>Klienti</th>
+              <th>Vlefshëm deri</th>
+              <th>Statusi</th>
+              <th class="right">Vlera</th>
+              <th style="width:120px"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="checkbox"></div></td>
+              <td><span class="strong">Q-2026-0247</span><div class="muted" style="font-size:11.5px;margin-top:2px">3 shërbime · 5 produkte</div></td>
+              <td>
+                <div class="cust">
+                  <div class="cust-avatar" style="background:#B85423">AL</div>
+                  <div><div class="cust-name">Adriatik Logistics</div><div class="cust-sub">Durrës · 4 kontakte</div></div>
+                </div>
+              </td>
+              <td class="muted">15 Qer 2026</td>
+              <td><span class="badge badge-gold"><span class="pip"></span>I dërguar</span></td>
+              <td class="right num strong">€8,400.00</td>
+              <td class="right">
+                <button class="btn btn-sm btn-accent">Konverto</button>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="checkbox checked"></div></td>
+              <td><span class="strong">Q-2026-0246</span><div class="muted" style="font-size:11.5px;margin-top:2px">CRM Pro · 24 muaj</div></td>
+              <td>
+                <div class="cust">
+                  <div class="cust-avatar" style="background:#2D6B52">HD</div>
+                  <div><div class="cust-name">Hekla Distribution</div><div class="cust-sub">Tiranë</div></div>
+                </div>
+              </td>
+              <td class="muted">28 Maj 2026</td>
+              <td><span class="badge badge-success"><span class="pip"></span>I pranuar</span></td>
+              <td class="right num strong">€7,200.00</td>
+              <td class="right">
+                <button class="btn btn-sm btn-accent">Konverto</button>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="checkbox"></div></td>
+              <td><span class="strong">Q-2026-0245</span><div class="muted" style="font-size:11.5px;margin-top:2px">5 lokale · POS</div></td>
+              <td>
+                <div class="cust">
+                  <div class="cust-avatar" style="background:#3D5A7F">TR</div>
+                  <div><div class="cust-name">Toskana Restaurants</div><div class="cust-sub">Tiranë · Korçë</div></div>
+                </div>
+              </td>
+              <td class="muted">20 Qer 2026</td>
+              <td><span class="badge badge-info"><span class="pip"></span>Në negocim</span></td>
+              <td class="right num strong">€6,000.00</td>
+              <td class="right">
+                <button class="btn btn-sm btn-ghost">Detaje</button>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="checkbox"></div></td>
+              <td><span class="strong">Q-2026-0244</span><div class="muted" style="font-size:11.5px;margin-top:2px">CRM + Faturim</div></td>
+              <td>
+                <div class="cust">
+                  <div class="cust-avatar" style="background:#A07A1F">GP</div>
+                  <div><div class="cust-name">Genti Properties</div><div class="cust-sub">Prishtinë</div></div>
+                </div>
+              </td>
+              <td class="muted">10 Qer 2026</td>
+              <td><span class="badge badge-success"><span class="pip"></span>I pranuar</span></td>
+              <td class="right num strong">€5,400.00</td>
+              <td class="right">
+                <button class="btn btn-sm btn-accent">Konverto</button>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="checkbox"></div></td>
+              <td><span class="strong">Q-2026-0243</span><div class="muted" style="font-size:11.5px;margin-top:2px">Paketa Standart</div></td>
+              <td>
+                <div class="cust">
+                  <div class="cust-avatar" style="background:#9A2D2D">EP</div>
+                  <div><div class="cust-name">Era Pharmacy</div><div class="cust-sub">Tiranë</div></div>
+                </div>
+              </td>
+              <td class="muted">05 Qer 2026</td>
+              <td><span class="badge badge-warning"><span class="pip"></span>Pa përgjigje</span></td>
+              <td class="right num strong">€4,800.00</td>
+              <td class="right">
+                <button class="btn btn-sm btn-ghost">Kujto</button>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="checkbox"></div></td>
+              <td><span class="strong">Q-2026-0242</span><div class="muted" style="font-size:11.5px;margin-top:2px">CRM Basic · 12 muaj</div></td>
+              <td>
+                <div class="cust">
+                  <div class="cust-avatar" style="background:#5C5648">KP</div>
+                  <div><div class="cust-name">Kosova Print Studio</div><div class="cust-sub">Prishtinë</div></div>
+                </div>
+              </td>
+              <td class="muted">02 Qer 2026</td>
+              <td><span class="badge badge-gold"><span class="pip"></span>I dërguar</span></td>
+              <td class="right num strong">€2,880.00</td>
+              <td class="right">
+                <button class="btn btn-sm btn-ghost">Detaje</button>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="checkbox"></div></td>
+              <td><span class="strong">Q-2026-0241</span><div class="muted" style="font-size:11.5px;margin-top:2px">POS · 3 vendndodhje</div></td>
+              <td>
+                <div class="cust">
+                  <div class="cust-avatar" style="background:#2D6B52">BC</div>
+                  <div><div class="cust-name">Bardh Caffe &amp; Co</div><div class="cust-sub">Prizren</div></div>
+                </div>
+              </td>
+              <td class="muted">22 Maj 2026</td>
+              <td><span class="badge badge-danger"><span class="pip"></span>Skaduar</span></td>
+              <td class="right num strong">€2,160.00</td>
+              <td class="right">
+                <button class="btn btn-sm btn-ghost">Rinov</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ═══════════════ SUBSCRIPTIONS PANEL ═══════════════ -->
+<section class="panel" data-id="subscriptions">
+  <div class="page">
+    <div class="page-head">
+      <div>
+        <div class="breadcrumb"><span>Biznesi</span><span class="sep">/</span><span>Subscriptions</span></div>
+        <h1 class="page-title">Abonime &amp; <em>rinovime</em></h1>
+        <p class="page-sub">Menaxho faturat e përsëritura, rinovimet automatike dhe ndiq metrikat e MRR/ARR.</p>
+      </div>
+      <div class="head-actions">
+        <button class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Eksporto CSV
+        </button>
+        <button class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          Plan i ri
+        </button>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <!-- MRR hero card -->
+        <div class="mrr-card" style="margin-bottom:18px">
+          <div class="mrr-label">Të ardhura të përsëritura mujore (MRR)</div>
+          <div class="mrr-value">€<em>18,420</em></div>
+          <div class="mrr-row">
+            <div><strong>€221.0K</strong>ARR i parashikuar</div>
+            <div><strong>+€2,840</strong>Rritje neto (30d)</div>
+            <div><strong>2.1%</strong>Churn mujor</div>
+            <div><strong>€658</strong>ARPU</div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats" style="grid-template-columns:repeat(3,1fr);margin-bottom:18px">
+          <div class="stat">
+            <div class="stat-label">Abonime aktive</div>
+            <div class="stat-value">28</div>
+            <div class="stat-delta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>+4 këtë muaj</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Rinovime në vijim</div>
+            <div class="stat-value">11</div>
+            <div class="stat-delta">7 ditët e ardhshme</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Pagesat e dështuara</div>
+            <div class="stat-value">2</div>
+            <div class="stat-delta down">€840 në rrezik</div>
+          </div>
+        </div>
+
+        <!-- Active subscriptions table -->
+        <div class="card">
+          <div class="card-head">
+            <div>
+              <div class="card-title">Abonime aktive</div>
+              <div class="card-sub">Klientët me plane të përsëritura</div>
+            </div>
+            <div class="head-actions">
+              <button class="chip active" data-toggle="">Aktive (28)</button>
+              <button class="chip" data-toggle="">Pezulluar (3)</button>
+              <button class="chip" data-toggle="">Anuluar (12)</button>
+            </div>
+          </div>
+          <div class="tbl-wrap">
+            <table class="tbl">
+              <thead>
+                <tr>
+                  <th>Klienti</th>
+                  <th>Plani</th>
+                  <th>Cikli</th>
+                  <th>Rinovim i ardhshëm</th>
+                  <th>Statusi</th>
+                  <th class="right">MRR</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="cust">
+                      <div class="cust-avatar" style="background:#1F4A3A">AL</div>
+                      <div><div class="cust-name">Adriatik Logistics</div><div class="cust-sub">Që nga Jan 2025</div></div>
+                    </div>
+                  </td>
+                  <td><span class="strong">Enterprise</span><div class="muted" style="font-size:11.5px;margin-top:2px">15 user · API</div></td>
+                  <td class="muted">Vjetor</td>
+                  <td>
+                    <div>14 Qer 2026</div>
+                    <div class="muted" style="font-size:11.5px;margin-top:2px">për 35 ditë</div>
+                  </td>
+                  <td><span class="badge badge-success"><span class="pip"></span>Aktiv</span></td>
+                  <td class="right num strong">€700.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cust">
+                      <div class="cust-avatar" style="background:#B85423">TR</div>
+                      <div><div class="cust-name">Toskana Restaurants</div><div class="cust-sub">5 lokale</div></div>
+                    </div>
+                  </td>
+                  <td><span class="strong">Pro</span><div class="muted" style="font-size:11.5px;margin-top:2px">POS i lidhur</div></td>
+                  <td class="muted">Mujor</td>
+                  <td>
+                    <div>02 Qer 2026</div>
+                    <div class="muted" style="font-size:11.5px;margin-top:2px">për 23 ditë</div>
+                  </td>
+                  <td><span class="badge badge-success"><span class="pip"></span>Aktiv</span></td>
+                  <td class="right num strong">€500.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cust">
+                      <div class="cust-avatar" style="background:#3D5A7F">EP</div>
+                      <div><div class="cust-name">Era Pharmacy</div><div class="cust-sub">Tiranë</div></div>
+                    </div>
+                  </td>
+                  <td><span class="strong">Pro</span><div class="muted" style="font-size:11.5px;margin-top:2px">CRM + Inventar</div></td>
+                  <td class="muted">Mujor</td>
+                  <td>
+                    <div style="color:var(--danger)">Sot — pagesa dështoi</div>
+                    <div class="muted" style="font-size:11.5px;margin-top:2px">Tentativa 2/4</div>
+                  </td>
+                  <td><span class="badge badge-danger"><span class="pip"></span>Past Due</span></td>
+                  <td class="right num strong">€400.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cust">
+                      <div class="cust-avatar" style="background:#A07A1F">SA</div>
+                      <div><div class="cust-name">Sahit Auto Service</div><div class="cust-sub">Ferizaj</div></div>
+                    </div>
+                  </td>
+                  <td><span class="strong">Pro</span><div class="muted" style="font-size:11.5px;margin-top:2px">Faturim · CRM</div></td>
+                  <td class="muted">Vjetor</td>
+                  <td>
+                    <div>10 Maj 2027</div>
+                    <div class="muted" style="font-size:11.5px;margin-top:2px">për 365 ditë</div>
+                  </td>
+                  <td><span class="badge badge-success"><span class="pip"></span>I ri</span></td>
+                  <td class="right num strong">€300.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cust">
+                      <div class="cust-avatar" style="background:#5C5648">BC</div>
+                      <div><div class="cust-name">Bardh Caffe</div><div class="cust-sub">3 vendndodhje</div></div>
+                    </div>
+                  </td>
+                  <td><span class="strong">Standart</span><div class="muted" style="font-size:11.5px;margin-top:2px">POS basic</div></td>
+                  <td class="muted">Mujor</td>
+                  <td>
+                    <div>18 Maj 2026</div>
+                    <div class="muted" style="font-size:11.5px;margin-top:2px">për 8 ditë</div>
+                  </td>
+                  <td><span class="badge badge-warning"><span class="pip"></span>Skadon së shpejti</span></td>
+                  <td class="right num strong">€180.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cust">
+                      <div class="cust-avatar" style="background:#9A2D2D">MB</div>
+                      <div><div class="cust-name">Mirjeta Boutique</div><div class="cust-sub">Shkup</div></div>
+                    </div>
+                  </td>
+                  <td><span class="strong">eCom Pro</span><div class="muted" style="font-size:11.5px;margin-top:2px">+ Email Marketing</div></td>
+                  <td class="muted">Mujor</td>
+                  <td>
+                    <div>25 Maj 2026</div>
+                    <div class="muted" style="font-size:11.5px;margin-top:2px">për 15 ditë</div>
+                  </td>
+                  <td><span class="badge badge-success"><span class="pip"></span>Aktiv</span></td>
+                  <td class="right num strong">€180.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column: plans, upcoming -->
+      <div>
+        <div class="side-card">
+          <div class="side-title">Planet</div>
+          <div class="sub-row">
+            <div style="flex:1">
+              <div class="sub-plan">Basic</div>
+              <div class="sub-plan-meta">8 klientë · 1 user</div>
+            </div>
+            <div class="sub-mrr">€29<small>/muaj</small></div>
+          </div>
+          <div class="sub-row">
+            <div style="flex:1">
+              <div class="sub-plan">Standart</div>
+              <div class="sub-plan-meta">11 klientë · 5 user</div>
+            </div>
+            <div class="sub-mrr">€89<small>/muaj</small></div>
+          </div>
+          <div class="sub-row">
+            <div style="flex:1">
+              <div class="sub-plan">Pro</div>
+              <div class="sub-plan-meta">6 klientë · Pakufi user</div>
+            </div>
+            <div class="sub-mrr">€199<small>/muaj</small></div>
+          </div>
+          <div class="sub-row">
+            <div style="flex:1">
+              <div class="sub-plan">Enterprise</div>
+              <div class="sub-plan-meta">3 klientë · Custom</div>
+            </div>
+            <div class="sub-mrr">€499<small>/muaj</small></div>
+          </div>
+          <button class="btn btn-ghost btn-sm" style="width:100%;margin-top:14px;justify-content:center">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            Krijo plan të ri
+          </button>
+        </div>
+
+        <div class="side-card">
+          <div class="side-title">Rinovime — javën e ardhshme</div>
+          <div class="feed">
+            <div class="feed-item">
+              <div class="feed-dot gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+              <div class="feed-body">
+                <strong>Bardh Caffe</strong> rinovim më 18 Maj
+                <div class="feed-time">€180.00 · auto-charge</div>
+              </div>
+            </div>
+            <div class="feed-item">
+              <div class="feed-dot gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+              <div class="feed-body">
+                <strong>Mirjeta Boutique</strong> rinovim më 25 Maj
+                <div class="feed-time">€180.00 · auto-charge</div>
+              </div>
+            </div>
+            <div class="feed-item">
+              <div class="feed-dot warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div>
+              <div class="feed-body">
+                <strong>Era Pharmacy</strong> dështoi pagesa
+                <div class="feed-time">Provuar 2 herë · Riprovë automatike pas 3 ditësh</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════ INVOICING PANEL (ACTIVE DEFAULT) ═══════════════ -->
+<section class="panel active" data-id="invoicing">
+  <div class="page">
+    <div class="page-head">
+      <div>
+        <div class="breadcrumb"><span>Biznesi</span><span class="sep">/</span><span>Invoicing</span></div>
+        <h1 class="page-title">Faturat &amp; <em>pagesat</em></h1>
+        <p class="page-sub">Gjenero, dërgo dhe ndiq fatura — me pagesa direkt nga klienti përmes portaleve të integruara.</p>
+      </div>
+      <div class="head-actions">
+        <button class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Eksporto PDF
+        </button>
+        <button class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"></path></svg>
+          Importo
+        </button>
+        <button class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          Faturë e re
+        </button>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-label">Të ardhura këtë muaj</div>
+        <div class="stat-value">€42.6<span class="unit">K</span></div>
+        <div class="stat-delta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>+12.8% nga muaji i kaluar</div>
+        <svg class="stat-spark" viewBox="0 0 100 38"><polyline points="0,30 12,28 24,22 36,25 48,18 60,20 72,12 84,15 100,8" fill="none" stroke="var(--pika)" stroke-width="1.5"></polyline></svg>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Të papaguara</div>
+        <div class="stat-value">€8.4<span class="unit">K</span></div>
+        <div class="stat-delta">14 fatura në pritje</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Të vonuara</div>
+        <div class="stat-value">€2.1<span class="unit">K</span></div>
+        <div class="stat-delta down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>3 fatura · përkujtim auto</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Koha mesatare e pagesës</div>
+        <div class="stat-value">8.2 <span class="unit">ditë</span></div>
+        <div class="stat-delta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>−1.4 ditë me Stripe Connect</div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active">Të gjitha <span class="count">94</span></button>
+      <button class="tab">Draft <span class="count">3</span></button>
+      <button class="tab">Të dërguara <span class="count">14</span></button>
+      <button class="tab">Të paguara <span class="count">77</span></button>
+      <button class="tab">Të vonuara <span class="count">3</span></button>
+    </div>
+
+    <div class="two-col">
+      <!-- Invoices list -->
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <div class="card-title">Faturat e fundit</div>
+            <div class="card-sub">Klikoni një rresht për pamje paraprake</div>
+          </div>
+          <div class="head-actions">
+            <button class="chip" data-toggle="">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="7" y1="12" x2="17" y2="12"></line><line x1="10" y1="18" x2="14" y2="18"></line></svg>
+              Filtra
+            </button>
+            <button class="chip" data-toggle="">Periudha: Maj 2026</button>
+          </div>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th>Faturë</th>
+                <th>Klienti</th>
+                <th>Lëshuar</th>
+                <th>Afati</th>
+                <th>Statusi</th>
+                <th class="right">Vlera</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background:var(--paper-2)">
+                <td><span class="strong">F-2026-0142</span><div class="muted" style="font-size:11.5px;margin-top:2px">Enterprise · vjetor</div></td>
+                <td>
+                  <div class="cust">
+                    <div class="cust-avatar" style="background:#1F4A3A">AL</div>
+                    <div><div class="cust-name">Adriatik Logistics</div><div class="cust-sub">F-Aut · Stripe</div></div>
+                  </div>
+                </td>
+                <td class="muted">08 Maj</td>
+                <td class="muted">22 Maj</td>
+                <td><span class="badge badge-gold"><span class="pip"></span>E dërguar</span></td>
+                <td class="right num strong">€8,400.00</td>
+              </tr>
+              <tr>
+                <td><span class="strong">F-2026-0141</span><div class="muted" style="font-size:11.5px;margin-top:2px">CRM Pro · vjetor</div></td>
+                <td>
+                  <div class="cust">
+                    <div class="cust-avatar" style="background:#2D6B52">HD</div>
+                    <div><div class="cust-name">Hekla Distribution</div><div class="cust-sub">F-Aut · Bank transfer</div></div>
+                  </div>
+                </td>
+                <td class="muted">06 Maj</td>
+                <td class="muted">20 Maj</td>
+                <td><span class="badge badge-success"><span class="pip"></span>E paguar</span></td>
+                <td class="right num strong">€7,200.00</td>
+              </tr>
+              <tr>
+                <td><span class="strong">F-2026-0140</span><div class="muted" style="font-size:11.5px;margin-top:2px">5 lokale · POS</div></td>
+                <td>
+                  <div class="cust">
+                    <div class="cust-avatar" style="background:#3D5A7F">TR</div>
+                    <div><div class="cust-name">Toskana Restaurants</div><div class="cust-sub">F-Aut · përsëritëse</div></div>
+                  </div>
+                </td>
+                <td class="muted">02 Maj</td>
+                <td class="muted">16 Maj</td>
+                <td><span class="badge badge-success"><span class="pip"></span>E paguar</span></td>
+                <td class="right num strong">€500.00</td>
+              </tr>
+              <tr>
+                <td><span class="strong">F-2026-0139</span><div class="muted" style="font-size:11.5px;margin-top:2px">Pro · mujor</div></td>
+                <td>
+                  <div class="cust">
+                    <div class="cust-avatar" style="background:#9A2D2D">EP</div>
+                    <div><div class="cust-name">Era Pharmacy</div><div class="cust-sub">F-Aut · përsëritëse</div></div>
+                  </div>
+                </td>
+                <td class="muted">01 Maj</td>
+                <td class="muted" style="color:var(--danger)">04 Maj</td>
+                <td><span class="badge badge-danger"><span class="pip"></span>E vonuar</span></td>
+                <td class="right num strong">€400.00</td>
+              </tr>
+              <tr>
+                <td><span class="strong">F-2026-0138</span><div class="muted" style="font-size:11.5px;margin-top:2px">eCom Pro · mujor</div></td>
+                <td>
+                  <div class="cust">
+                    <div class="cust-avatar" style="background:#A07A1F">MB</div>
+                    <div><div class="cust-name">Mirjeta Boutique</div><div class="cust-sub">F-Aut · Stripe</div></div>
+                  </div>
+                </td>
+                <td class="muted">25 Pri</td>
+                <td class="muted">09 Maj</td>
+                <td><span class="badge badge-success"><span class="pip"></span>E paguar</span></td>
+                <td class="right num strong">€180.00</td>
+              </tr>
+              <tr>
+                <td><span class="strong">F-2026-0137</span><div class="muted" style="font-size:11.5px;margin-top:2px">Standart · mujor</div></td>
+                <td>
+                  <div class="cust">
+                    <div class="cust-avatar" style="background:#5C5648">BC</div>
+                    <div><div class="cust-name">Bardh Caffe</div><div class="cust-sub">F-Aut · përsëritëse</div></div>
+                  </div>
+                </td>
+                <td class="muted">20 Pri</td>
+                <td class="muted">04 Maj</td>
+                <td><span class="badge badge-success"><span class="pip"></span>E paguar</span></td>
+                <td class="right num strong">€180.00</td>
+              </tr>
+              <tr>
+                <td><span class="strong">F-2026-0136</span><div class="muted" style="font-size:11.5px;margin-top:2px">Setup + 3 muaj</div></td>
+                <td>
+                  <div class="cust">
+                    <div class="cust-avatar" style="background:#B85423">LB</div>
+                    <div><div class="cust-name">Lulëzim Bakery</div><div class="cust-sub">Faturë e parë</div></div>
+                  </div>
+                </td>
+                <td class="muted">18 Pri</td>
+                <td class="muted">02 Maj</td>
+                <td><span class="badge badge-warning"><span class="pip"></span>Pjesërisht paguar</span></td>
+                <td class="right num strong">€650.00</td>
+              </tr>
+              <tr>
+                <td><span class="strong">F-2026-0135</span><div class="muted" style="font-size:11.5px;margin-top:2px">CRM Basic · vjetor</div></td>
+                <td>
+                  <div class="cust">
+                    <div class="cust-avatar" style="background:#3D5A7F">KP</div>
+                    <div><div class="cust-name">Kosova Print Studio</div><div class="cust-sub">Përmes kuotimit Q-0242</div></div>
+                  </div>
+                </td>
+                <td class="muted">15 Pri</td>
+                <td class="muted">29 Pri</td>
+                <td><span class="badge badge-success"><span class="pip"></span>E paguar</span></td>
+                <td class="right num strong">€2,880.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Invoice preview side panel -->
+      <div>
+        <div class="inv-preview">
+          <div class="inv-head">
+            <div>
+              <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink-muted);margin-bottom:6px">Faturë</div>
+              <div class="inv-no">F-2026-0142</div>
+              <div class="muted" style="font-size:12px;margin-top:4px">Lëshuar 08 Maj 2026</div>
+            </div>
+            <span class="badge badge-gold" style="padding:5px 10px"><span class="pip"></span>E dërguar</span>
+          </div>
+
+          <div class="inv-meta-row">
+            <div>
+              <div class="ml">Lëshuar nga</div>
+              <div class="mv"><strong>Studio PIKA sh.p.k</strong><br>Rr. Garibaldi 11<br>Prishtinë 10000, Kosovë<br>NUI: 901234567</div>
+            </div>
+            <div>
+              <div class="ml">Faturuar tek</div>
+              <div class="mv"><strong>Adriatik Logistics</strong><br>Rr. Tregtare 24<br>Durrës 2001, Shqipëri<br>NIPT: K91234567L</div>
+            </div>
+          </div>
+
+          <div class="inv-lines">
+            <div class="inv-line head">
+              <div>Përshkrimi</div>
+              <div class="right">Sasi</div>
+              <div class="right">Çmim</div>
+              <div class="right">Totali</div>
+            </div>
+            <div class="inv-line">
+              <div>PIKA Enterprise — Licencë vjetore<div class="muted" style="font-size:11px">15 user · API access · Premium support</div></div>
+              <div class="right">1</div>
+              <div class="right">€5,988.00</div>
+              <div class="right">€5,988.00</div>
+            </div>
+            <div class="inv-line">
+              <div>Setup &amp; Onboarding<div class="muted" style="font-size:11px">Migrim të dhënash · trajnim 3 ditë</div></div>
+              <div class="right">1</div>
+              <div class="right">€1,200.00</div>
+              <div class="right">€1,200.00</div>
+            </div>
+            <div class="inv-line">
+              <div>Custom integrim (SAP)</div>
+              <div class="right">12 h</div>
+              <div class="right">€75.00</div>
+              <div class="right">€900.00</div>
+            </div>
+          </div>
+
+          <div class="inv-totals">
+            <div class="row"><span>Nëntotali</span><span class="v">€8,088.00</span></div>
+            <div class="row"><span>Zbritja (5%)</span><span class="v">−€404.40</span></div>
+            <div class="row"><span>TVSH (18%)</span><span class="v">€1,383.07</span></div>
+            <div class="row grand"><span>Totali</span><span class="v">€8,400.00</span></div>
+          </div>
+
+          <div style="display:flex;gap:6px;margin-top:18px">
+            <button class="btn btn-accent btn-sm" style="flex:1;justify-content:center">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              Dërgo përkujtim
+            </button>
+            <button class="btn btn-ghost btn-sm" style="flex:1;justify-content:center">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              PDF
+            </button>
+          </div>
+        </div>
+
+        <div class="side-card" style="margin-top:14px">
+          <div class="side-title">Portat e pagesës</div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;align-items:center;gap:10px;padding:10px;background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius-sm)">
+              <div style="width:32px;height:32px;background:#635BFF;border-radius:6px;display:grid;place-items:center;color:#fff;font-weight:700;font-size:11px;font-family:var(--font-display)">S</div>
+              <div style="flex:1"><div style="font-size:13px;font-weight:500">Stripe</div><div class="muted" style="font-size:11.5px">€32.4K këtë muaj · 1.4%</div></div>
+              <span class="badge badge-success"><span class="pip"></span>Aktiv</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;padding:10px;background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius-sm)">
+              <div style="width:32px;height:32px;background:#1F4A3A;border-radius:6px;display:grid;place-items:center;color:#fff;font-weight:700;font-size:11px;font-family:var(--font-display)">B</div>
+              <div style="flex:1"><div style="font-size:13px;font-weight:500">Bank Transfer</div><div class="muted" style="font-size:11.5px">€8.2K këtë muaj · falas</div></div>
+              <span class="badge badge-success"><span class="pip"></span>Aktiv</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;padding:10px;background:var(--paper-2);border:1px dashed var(--line-strong);border-radius:var(--radius-sm)">
+              <div style="width:32px;height:32px;background:var(--paper-sunk);border-radius:6px;display:grid;place-items:center;color:var(--ink-muted)">+</div>
+              <div style="flex:1"><div style="font-size:13px;font-weight:500;color:var(--ink-muted)">Shto PayPal / NLB</div><div class="muted" style="font-size:11.5px">Konfiguro një portë të re</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ═══════════════ EXPENSES & DOCUMENTS PANEL ═══════════════ -->
+<section class="panel" data-id="expenses">
+  <div class="page">
+    <div class="page-head">
+      <div>
+        <div class="breadcrumb"><span>Biznesi</span><span class="sep">/</span><span>Expenses &amp; Documents</span></div>
+        <h1 class="page-title">Shpenzimet &amp; <em>dokumentet</em></h1>
+        <p class="page-sub">Menaxho shpenzimet operative dhe gjenero kontrata profesionale me një klikim.</p>
+      </div>
+      <div class="head-actions">
+        <button class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+          Skano faturë
+        </button>
+        <button class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          Shpenzim i ri
+        </button>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active">Shpenzime <span class="count">186</span></button>
+      <button class="tab">Dokumente &amp; Kontrata <span class="count">42</span></button>
+      <button class="tab">Furnitorët <span class="count">28</span></button>
+      <button class="tab">Raportet</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-label">Shpenzime këtë muaj</div>
+        <div class="stat-value">€12.4<span class="unit">K</span></div>
+        <div class="stat-delta down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>−€420 nga prilli</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Të pa-rimbursuara</div>
+        <div class="stat-value">€840</div>
+        <div class="stat-delta">7 fatura në pritje</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Buxheti i përdorur</div>
+        <div class="stat-value">68<span class="unit">%</span></div>
+        <div class="stat-delta">€8.4K nga €12.4K</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Dokumente aktive</div>
+        <div class="stat-value">42</div>
+        <div class="stat-delta">12 kontrata · 30 propozime</div>
+      </div>
+    </div>
+
+    <!-- Two-col: expenses table + category breakdown -->
+    <div class="expense-grid" style="margin-bottom:26px">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <div class="card-title">Shpenzimet e fundit</div>
+            <div class="card-sub">Maj 2026</div>
+          </div>
+          <div class="head-actions">
+            <button class="chip active" data-toggle="">Të gjitha</button>
+            <button class="chip" data-toggle="">Pa kategori</button>
+            <button class="chip" data-toggle="">Të mëdha (&gt;€500)</button>
+          </div>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th>Përshkrimi</th>
+                <th>Kategoria</th>
+                <th>Furnitori</th>
+                <th>Data</th>
+                <th>Statusi</th>
+                <th class="right">Vlera</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="strong">AWS Cloud Hosting</span><div class="muted" style="font-size:11.5px;margin-top:2px">EU-West-1 · prodhim</div></td>
+                <td><span class="badge badge-info"><span class="pip"></span>Infrastrukturë</span></td>
+                <td class="muted">Amazon Web Services</td>
+                <td class="muted">07 Maj</td>
+                <td><span class="badge badge-success"><span class="pip"></span>Paguar</span></td>
+                <td class="right num strong">€487.20</td>
+              </tr>
+              <tr>
+                <td><span class="strong">Anthropic API Credits</span><div class="muted" style="font-size:11.5px;margin-top:2px">Claude Sonnet/Opus tokens</div></td>
+                <td><span class="badge badge-info"><span class="pip"></span>Infrastrukturë</span></td>
+                <td class="muted">Anthropic</td>
+                <td class="muted">05 Maj</td>
+                <td><span class="badge badge-success"><span class="pip"></span>Paguar</span></td>
+                <td class="right num strong">€340.00</td>
+              </tr>
+              <tr>
+                <td><span class="strong">Office rent — Maj</span><div class="muted" style="font-size:11.5px;margin-top:2px">Coworking Pristina</div></td>
+                <td><span class="badge badge-neutral"><span class="pip"></span>Operative</span></td>
+                <td class="muted">HUB387</td>
+                <td class="muted">02 Maj</td>
+                <td><span class="badge badge-success"><span class="pip"></span>Paguar</span></td>
+                <td class="right num strong">€280.00</td>
+              </tr>
+              <tr>
+                <td><span class="strong">Figma Organization</span><div class="muted" style="font-size:11.5px;margin-top:2px">5 editor seats</div></td>
+                <td><span class="badge badge-gold"><span class="pip"></span>Software</span></td>
+                <td class="muted">Figma Inc</td>
+                <td class="muted">28 Pri</td>
+                <td><span class="badge badge-success"><span class="pip"></span>Paguar</span></td>
+                <td class="right num strong">€225.00</td>
+              </tr>
+              <tr>
+                <td><span class="strong">Marketing — Meta Ads</span><div class="muted" style="font-size:11.5px;margin-top:2px">Fushatë lansimi PIKA</div></td>
+                <td><span class="badge" style="background:#F2DDD8;color:#B85423"><span class="pip"></span>Marketing</span></td>
+                <td class="muted">Meta Platforms</td>
+                <td class="muted">25 Pri</td>
+                <td><span class="badge badge-warning"><span class="pip"></span>Në pritje</span></td>
+                <td class="right num strong">€680.00</td>
+              </tr>
+              <tr>
+                <td><span class="strong">Kontabilist — kuartali Q1</span><div class="muted" style="font-size:11.5px;margin-top:2px">Raporte financiare</div></td>
+                <td><span class="badge badge-neutral"><span class="pip"></span>Profesionale</span></td>
+                <td class="muted">Aliu &amp; Associates</td>
+                <td class="muted">22 Pri</td>
+                <td><span class="badge badge-success"><span class="pip"></span>Paguar</span></td>
+                <td class="right num strong">€450.00</td>
+              </tr>
+              <tr>
+                <td><span class="strong">Stripe processing fees</span><div class="muted" style="font-size:11.5px;margin-top:2px">Maj — 142 transaksione</div></td>
+                <td><span class="badge badge-info"><span class="pip"></span>Infrastrukturë</span></td>
+                <td class="muted">Stripe</td>
+                <td class="muted">31 Pri</td>
+                <td><span class="badge badge-success"><span class="pip"></span>Paguar</span></td>
+                <td class="right num strong">€187.40</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Category breakdown side -->
+      <div>
+        <div class="side-card">
+          <div class="side-title">Shpenzimet sipas kategorisë</div>
+          <div class="cat-list">
+            <div class="cat-item">
+              <div class="cat-bar-wrap">
+                <div class="cat-bar-row"><span class="nm">Infrastrukturë</span><span class="vl">€4,820 · 39%</span></div>
+                <div class="cat-bar"><div class="cat-bar-fill" style="width:39%"></div></div>
+              </div>
+            </div>
+            <div class="cat-item">
+              <div class="cat-bar-wrap">
+                <div class="cat-bar-row"><span class="nm">Marketing</span><span class="vl">€2,840 · 23%</span></div>
+                <div class="cat-bar"><div class="cat-bar-fill" style="width:23%;background:#B85423"></div></div>
+              </div>
+            </div>
+            <div class="cat-item">
+              <div class="cat-bar-wrap">
+                <div class="cat-bar-row"><span class="nm">Software &amp; Tools</span><span class="vl">€1,920 · 15%</span></div>
+                <div class="cat-bar"><div class="cat-bar-fill" style="width:15%;background:#A07A1F"></div></div>
+              </div>
+            </div>
+            <div class="cat-item">
+              <div class="cat-bar-wrap">
+                <div class="cat-bar-row"><span class="nm">Operative</span><span class="vl">€1,540 · 13%</span></div>
+                <div class="cat-bar"><div class="cat-bar-fill" style="width:13%;background:   #5C5648"></div></div>
+              </div>
+            </div>
+            <div class="cat-item">
+              <div class="cat-bar-wrap">
+                <div class="cat-bar-row"><span class="nm">Profesionale</span><span class="vl">€1,280 · 10%</span></div>
+                <div class="cat-bar"><div class="cat-bar-fill" style="width:10%;background:#3D5A7F"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-size:11.5px;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink-muted);margin-bottom:2px">Totali</div>
+              <div style="font-family:var(--font-display);font-size:22px;font-weight:500;letter-spacing:-0.02em">€12,400</div>
+            </div>
+            <button class="btn btn-sm btn-ghost">Raporti i plotë</button>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <div class="side-title">Auto-skanim faturash</div>
+          <div style="background:#E4EDE7;border:1px dashed #1F4A3A;padding:18px;border-radius:6px;text-align:center">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--pika)" style="width:32px;height:32px;margin:0 auto 10px;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            <div style="font-size:13px;font-weight:500;color:var(--pika);margin-bottom:4px">Tërhiq foto faturash këtu</div>
+            <div style="font-size:11.5px;color:var(--ink-soft)">OCR + AI ekstraktim automatik (Claude Vision)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Documents section -->
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <div class="card-title">Dokumente &amp; Shabllonet</div>
+          <div class="card-sub">Gjenero kontrata, propozime dhe PDF profesionale</div>
+        </div>
+        <button class="btn btn-primary btn-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          Shabllon i ri
+        </button>
+      </div>
+
+      <div style="padding:20px">
+        <div class="docs-grid">
+          <div class="doc-card">
+            <div class="doc-icon contract"></div>
+            <div class="doc-name">Kontratë SaaS — vjetore</div>
+            <div class="doc-desc">Kontratë standarte për abonim vjetor. Përfshin SLA dhe GDPR.</div>
+            <div style="margin-top:12px;display:flex;justify-content:space-between;font-size:11px;color:var(--ink-muted)">
+              <span>Përdorur 24 herë</span>
+              <span class="badge badge-success" style="padding:2px 7px;font-size:10.5px">Aktive</span>
+            </div>
+          </div>
+
+          <div class="doc-card">
+            <div class="doc-icon contract"></div>
+            <div class="doc-name">Kontratë SaaS — mujore</div>
+            <div class="doc-desc">Për klientë me cikle mujore. Anulim me 30 ditë njoftim.</div>
+            <div style="margin-top:12px;display:flex;justify-content:space-between;font-size:11px;color:var(--ink-muted)">
+              <span>Përdorur 18 herë</span>
+              <span class="badge badge-success" style="padding:2px 7px;font-size:10.5px">Aktive</span>
+            </div>
+          </div>
+
+          <div class="doc-card">
+            <div class="doc-icon proposal"></div>
+            <div class="doc-name">Propozim — Enterprise</div>
+            <div class="doc-desc">Shabllon për shitje enterprise. Pricing custom, ROI, timeline.</div>
+            <div style="margin-top:12px;display:flex;justify-content:space-between;font-size:11px;color:var(--ink-muted)">
+              <span>Përdorur 8 herë</span>
+              <span class="badge badge-success" style="padding:2px 7px;font-size:10.5px">Aktive</span>
+            </div>
+          </div>
+
+          <div class="doc-card">
+            <div class="doc-icon proposal"></div>
+            <div class="doc-name">Propozim — SMB</div>
+            <div class="doc-desc">Propozim 2-faqësh për biznese të vogla. Vetëkonvertues.</div>
+            <div style="margin-top:12px;display:flex;justify-content:space-between;font-size:11px;color:var(--ink-muted)">
+              <span>Përdorur 32 herë</span>
+              <span class="badge badge-success" style="padding:2px 7px;font-size:10.5px">Aktive</span>
+            </div>
+          </div>
+
+          <div class="doc-card">
+            <div class="doc-icon invoice"></div>
+            <div class="doc-name">NDA (dypalëshe)</div>
+            <div class="doc-desc">Marrëveshje konfidencialiteti për partnerë teknikë.</div>
+            <div style="margin-top:12px;display:flex;justify-content:space-between;font-size:11px;color:var(--ink-muted)">
+              <span>Përdorur 14 herë</span>
+              <span class="badge badge-success" style="padding:2px 7px;font-size:10.5px">Aktive</span>
+            </div>
+          </div>
+
+          <div class="doc-card">
+            <div class="doc-icon"></div>
+            <div class="doc-name">Marrëveshje Reseller</div>
+            <div class="doc-desc">Për partnerë rishitës me komision përkatës.</div>
+            <div style="margin-top:12px;display:flex;justify-content:space-between;font-size:11px;color:var(--ink-muted)">
+              <span>Përdorur 3 herë</span>
+              <span class="badge badge-gold" style="padding:2px 7px;font-size:10.5px">Draft</span>
+            </div>
+          </div>
+
+          <div class="doc-card" style="border-style:dashed;background:var(--paper-2);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:180px;color:var(--ink-muted)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:28px;height:28px;margin-bottom:10px;stroke-width:1.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            <div style="font-size:13px;font-weight:500">Krijo shabllon</div>
+            <div style="font-size:11.5px;margin-top:3px">Variabla, kushte, firma</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  
+
+  
+
+    
+
+
+
+    <script src="script.js"></script>
+
+    
+
+  
+
+</body>
+</html>
